@@ -27,7 +27,7 @@ flex-direction: column;
 /* margin-bottom: 300px; */
     margin: 0;
     padding: 1rem;
-    width: 20%;
+    width: 25%;
     background-color: #c3cfd9;
     height: 100vh;
 `

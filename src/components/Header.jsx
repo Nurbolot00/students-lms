@@ -8,15 +8,15 @@ const Header = () => {
             <ul>
                 <li><NavLink to='materials'
                 style={({isActive}) => ({
-                    color: isActive ? '444' : 'white',
+                    color: isActive ? '#444' : 'white',
                     borderBottom: isActive ? '4px solid orange' : 'none'})}>Materials</NavLink></li>
                     <li><NavLink to='students'
                 style={({isActive}) => ({
-                    color: isActive ? '444' : 'white',
+                    color: isActive ? '#444' : 'white',
                     borderBottom: isActive ? '4px solid orange' : 'none'})}>Students</NavLink></li>
                     <li><NavLink to='ratings'
                 style={({isActive}) => ({
-                    color: isActive ? '444' : 'white',
+                    color: isActive ? '#444' : 'white',
                     borderBottom: isActive ? '4px solid orange' : 'none'})}>Ratings</NavLink></li>
             </ul>
         </HeaderContainer>

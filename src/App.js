@@ -1,7 +1,6 @@
 import './App.css';
 import Aside from './components/Aside';
 import { Routes, Route } from 'react-router-dom'
-import Courses from './layout/Courses';
 import Materials from './pages/Materials';
 import Submitted from './pages/Submitted';
 import Waiting from './pages/Waiting';
@@ -9,10 +8,11 @@ import Late from './pages/Late';
 import Students from './pages/Students';
 import StudentDetails from './pages/StudentDetails';
 import Ratings from './pages/Ratings';
-import Anouncements from './layout/Anouncements';
-import Schedule from './layout/Schedule';
-import Notifications from './layout/Notifications';
 import CoursesPage from './pages/CoursesPage';
+import AnouncementsPage from './pages/AnouncementsPage';
+import NotificationPage from './pages/NotificationPage';
+import SchedulePage from './pages/SchedulePage';
+import MaterialDetails from './pages/MaterialDetails';
 
 const materials = [
   {
@@ -54,12 +54,13 @@ function App() {
           <Route path='/courses' element={<CoursesPage/>}>
 
             <Route path='materials' element={<Materials materials={materials}/>}>
+            <Route path='materials/:id/details/' element={<MaterialDetails  materials={materials}/>}/>
               <Route path='submitted' element={<Submitted/>}/>
               <Route path='waiting' element={<Waiting/>}/>
               <Route path='late' element={<Late/>}/>
             </Route>
 
-            <Route path='student' element={<Students students={students}/>}>
+            <Route path='students' element={<Students students={students}/>}>
               <Route path='students/:id/details/' element={<StudentDetails students={students}/>}/>
             </Route>
 
@@ -67,9 +68,10 @@ function App() {
           </Route>
 
 
-          <Route path='/anouncements' element={<Anouncements/>}/>
-          <Route path='/notifications' element={<Notifications/>}/>
-          <Route path='/schedule' element={<Schedule/>}/>
+          <Route path='/anouncements' element={<AnouncementsPage/>}/>
+          <Route path='/notifications' element={<NotificationPage/>}/>
+          <Route path='/schedule' element={<SchedulePage/>}/>
+          <Route path='*' element={<h2 style={{color: 'red'}}>ERROR 404 - NOT FOUND</h2>}/>
         </Routes>
 
         
