@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate} from 'react-router-dom'
 import styled from 'styled-components';
+import Button from '../components/UI/Button';
 
 const NotificationPage = () => {
     const navigate = useNavigate()
@@ -13,7 +14,7 @@ const NotificationPage = () => {
             <Block>
             <h1>Notifications Page</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima id animi doloremque reprehenderit aut eligendi ea repellendus, quasi culpa! Sint possimus repudiandae doloremque adipisci quis vero doloribus aspernatur vel sunt asperiores autem cupiditate voluptas aliquid vitae temporibus, dolore architecto placeat ipsum officiis corrupti dicta animi debitis accusantium totam. Ex, quo!</p>
-            <button onClick={goToMaterialsPageHandler}> Go To Materials Page</button>
+            <Button onClick={goToMaterialsPageHandler}> Go To Materials Page</Button>
             </Block>
         </Container>
     );

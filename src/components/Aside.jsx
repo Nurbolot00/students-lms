@@ -22,9 +22,6 @@ const Aside = () => {
 export default Aside;
 
 const Container = styled.div`
-display: flex;
-flex-direction: column;
-/* margin-bottom: 300px; */
     margin: 0;
     padding: 1rem;
     width: 25%;
@@ -35,6 +32,8 @@ flex-direction: column;
 const LogoHeading = styled.h1`
     color: blueviolet;
     text-align: center;
+    margin-bottom: 5rem;
+    font-size: 40px;
 `
 
 const LayoutList = styled.ul`
@@ -43,5 +42,15 @@ const LayoutList = styled.ul`
 
     li{
         list-style: none;
+        width: 100%;
+        a{
+            text-decoration: none;
+            display: block;
+            width: 100%;
+            height: 100%;
+            padding: 1.5rem;
+            font-size: 20px;
+            font-weight: 700;
+        }
     }
 `

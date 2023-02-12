@@ -28,7 +28,7 @@ export default Header;
 
 const HeaderContainer = styled.nav`
     background-color: #2596be; 
-    padding: 1.5rem;
+    padding: 1rem 1.5rem;
     width: 100%;
     ul{
         display: flex;
@@ -37,7 +37,7 @@ const HeaderContainer = styled.nav`
             list-style: none;
             a{
                 text-decoration: none;
-                font-size: 22px;
+                font-size: 24px;
                 font-weight: 700;
             }
         }

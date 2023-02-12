@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import {useNavigate} from 'react-router-dom'
+import Button from '../components/UI/Button';
 
 const Ratings = () => {
     const navigate = useNavigate()
@@ -10,7 +11,7 @@ const Ratings = () => {
     return (
         <Block>
             <h1>Rating Page</h1>
-            <button onClick={goBackHandler}>Go Back</button>
+            <Button onClick={goBackHandler}>Go Back</Button>
         </Block>
     );
 };

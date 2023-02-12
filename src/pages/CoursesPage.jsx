@@ -7,7 +7,7 @@ import styled from 'styled-components';
 const CoursesPage = () => {
     
     return (
-        <Container style={{border: '1px solid'}}>
+        <Container>
             <Header/>
             <Outlet/>
         </Container>

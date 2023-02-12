@@ -54,7 +54,7 @@ function App() {
           <Route path='/courses' element={<CoursesPage/>}>
 
             <Route path='materials' element={<Materials materials={materials}/>}>
-            <Route path='materials/:id/details/' element={<MaterialDetails  materials={materials}/>}/>
+            <Route path='materials/:id/details' element={<MaterialDetails  materials={materials}/>}/>
               <Route path='submitted' element={<Submitted/>}/>
               <Route path='waiting' element={<Waiting/>}/>
               <Route path='late' element={<Late/>}/>
