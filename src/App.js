@@ -51,18 +51,17 @@ function App() {
         <Aside/>
 
         <Routes>
-          <Route path='/courses' element={<CoursesPage/>}>
+          <Route path='/courses/' element={<CoursesPage/>}>
 
-            <Route path='materials' element={<Materials materials={materials}/>}>
-            <Route path='materials/:id/details' element={<MaterialDetails  materials={materials}/>}/>
+            <Route path='materials/' element={<Materials materials={materials}/>}/>
+            <Route path='materials/:id/details/' element={<MaterialDetails  materials={materials}/>}>
               <Route path='submitted' element={<Submitted/>}/>
               <Route path='waiting' element={<Waiting/>}/>
               <Route path='late' element={<Late/>}/>
             </Route>
 
-            <Route path='students' element={<Students students={students}/>}>
+            <Route path='students/' element={<Students students={students}/>}/>
               <Route path='students/:id/details/' element={<StudentDetails students={students}/>}/>
-            </Route>
 
             <Route path='ratings' element={<Ratings/>}/>
           </Route>

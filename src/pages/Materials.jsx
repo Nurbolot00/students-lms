@@ -21,7 +21,7 @@ const Materials = ({materials}) => {
             <StyledList>
             {materials.map((item,index) =>{
                 return(
-                    <Link to={`${item.id}/details/submitted`} key={index}>
+                    <Link to={`${item.id}/details`} key={index}>
                     <li>
                         <h2>{item.title}</h2>
                         <Button>Details</Button>
