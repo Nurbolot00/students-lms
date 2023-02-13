@@ -16,12 +16,13 @@ const Materials = ({materials}) => {
     }
 
     return (
-        <Block>
+        <>       
+         <Block>
             <Button onClick={openModal} color='orange'> + Add New Material</Button>
             <StyledList>
             {materials.map((item,index) =>{
                 return(
-                    <Link to={`${item.id}/details`} key={index}>
+                    <Link to={`${item.id}/details/submitted`} key={index}>
                     <li>
                         <h2>{item.title}</h2>
                         <Button>Details</Button>
@@ -38,6 +39,7 @@ const Materials = ({materials}) => {
                     <Button onClick={closeModal}>CLOSE</Button>
                 </Modal>) : null}
         </Block>
+        </>
     );
 };
 
